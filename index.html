@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap.css" />
+    <link rel="stylesheet" href="mycss.css" />
+    <title>Index</title>
+    <style>
+      .br {
+        border-radius: 50px;
+        box-shadow: 5px 5px 10px 0.2rem rgba(0, 0, 0, 0.25);
+        height: 300px;
+      }
+    </style>
+  </head>
+
+  <body class="bg-dark">
+    <div class="container">
+      <div
+        class="row d-flex justify-content-between text-center"
+        style="margin-top: 150px"
+      >
+          <!-- <h2><a href="" class="text-danger">Espace Patient</a></h2> -->
+          <button class="col-lg-3   bg-dark br btn"><img src="./HomeAdmin/pa.png" onclick="pat()"><h2 class="text-light">Espace Patient</h2></button>
+          <button class="col-lg-3  bg-dark br btn "><img src="./HomeAdmin/d.png" onclick="doc()"><h2 class="text-light">Espace Docteur</h2></button>
+          <button class="col-lg-3  bg-dark br btn "><img src="./HomeAdmin/ad.png" onclick="admin()"><h2 class="text-light">Espace Admin</h2></button>
+
+        <!-- <button class="col-lg-3 col-md-3 col-sm-3 btn btn-info"><a class="text-light" href="LoginPatient.php">Patient</a></button>
+        <button class="col-lg-3 col-md-3 col-sm-3 btn btn-info"><a class="text-light" href="LoginDoctor.php">Docteur</a></button>
+        <button class="col-lg-3 col-md-3 col-sm-3 btn btn-info"><a class="text-light" href="LoginAdmin.php">Admin</a></button>
+        <button class="col-lg-3 col-md-3 col-sm-3 btn btn-info"><a class="text-light" href="./HomeAdmin/aa.php">Admin</a></button> -->
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  function pat(){
+    window.location.href="LoginPatient.php";
+  }
+  function doc(){
+    window.location.href="LoginDoctor.php";
+  }
+  function admin(){
+    window.location.href="LoginAdmin.php";
+  }
+</script>
+
+
+<script src="./bootstrap.js"></script>
+<script src="./jquery-3.6.0.min.js"></script>
+<script src="./popper.min.js"></script>
